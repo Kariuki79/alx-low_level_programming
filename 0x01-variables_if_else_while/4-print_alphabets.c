@@ -13,5 +13,7 @@ int main(void)
 		{
 			  putchar(alpha);
 		}
-        }
-   :wq
+	}
+	putchar('\n');
+	return (0);
+}
