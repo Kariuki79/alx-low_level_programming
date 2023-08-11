@@ -12,7 +12,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n % 2 > 0)
 	{
-		pritf("%d if the number is greater than 0: is positive\n", n);
+		printf("%d if the number is greater than 0: is positive\n", n);
 	}
 	else
 	{
