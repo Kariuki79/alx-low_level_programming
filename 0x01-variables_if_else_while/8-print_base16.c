@@ -6,10 +6,14 @@
 
 int main(void)
 {
-	int number;
-	for(number = 1; number >= 20; number++)
+	int hex;
+	for (hex = 1; hex <= 9 ; hex++)
 	{
 		putchar(number + '0');
+	}
+	for (hex = 'a'; hex<= 'f'; hex++)
+	{
+		putchar(hex);
 	}
 	return (0);
 }
