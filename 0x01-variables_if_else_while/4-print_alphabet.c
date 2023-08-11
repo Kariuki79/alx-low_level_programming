@@ -5,13 +5,12 @@
 */
 int main(void)
 {
-        char alpha;
-
-        for (alpha = 'a'; alpha <= 'z'; alpha++)
-        {
+	char alpha;
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
+	{
 		if(alpha != 'q' && alpha != 'e')
 		{
-			  putchar(alpha);
+			putchar(alpha);
 		}
 	}
 	putchar('\n');
