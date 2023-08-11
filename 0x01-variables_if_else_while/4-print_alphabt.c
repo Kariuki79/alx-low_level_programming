@@ -2,7 +2,7 @@
 /**
 * main - prints the alphabet except q an e
 * * Return: 0
-* */
+*/
 int main(void)
 {
 	char alpha;
