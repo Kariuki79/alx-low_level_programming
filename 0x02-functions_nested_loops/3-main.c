@@ -2,7 +2,7 @@
 
 /**
  * main - check the code.
- *
+ * _islower(int c) - checks the lowercase character
  * Return: Always 0.
 */
 int main(void)
