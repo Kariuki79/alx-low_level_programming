@@ -1,3 +1,4 @@
+
 #include "main.h"
 /**
  * print_times_table - prints the n times table, starting with 0
@@ -46,6 +47,7 @@ void print_times_table(int n)
 			_putchar('\n');
 		}
 	}
+<<<<<<< HEAD
 }#include "main.h"
 /**
  * print_times_table - prints the n times table, starting with 0
@@ -83,3 +85,10 @@ void print_times_table(int n)
                                         _putchar((c % 10) + '0');
                                 }
                                 else if (c >= 100)
+=======
+}
+
+
+
+
+>>>>>>> eb41b030a24273edb96529a003c863464f57f0f8
