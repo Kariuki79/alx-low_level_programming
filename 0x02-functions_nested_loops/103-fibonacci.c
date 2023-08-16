@@ -13,7 +13,7 @@ int main(void)
 	{
 		p += n;
 		if (p % 2 == 0)
-			sum += k;
+			sum += p;
 		n = p - n;
 		++1;
 	}
