@@ -9,7 +9,8 @@ int main(void)
 {
 	int m = 0;
 	long n = 1, p = 2, sum = p;
-	while (p +n < 4000000)
+
+	while (p + n < 4000000)
 	{
 		p += n;
 		if (p % 2 == 0)
