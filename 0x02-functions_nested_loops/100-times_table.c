@@ -5,11 +5,11 @@
  * @n: the number for the times table
  * @row: the row number to print
  */
-void print_times_table_row(int n, int row)
+void print_times_table_rmow(int n, int row)
 {
-    int c;
+    int a, b, c;
 
-    for (int b = 0; b <= n; b++)
+    for (b = 0; b <= n; b++)
     {
         c = b * row;
         if (b == 0)
