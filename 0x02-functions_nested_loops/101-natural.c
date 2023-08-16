@@ -16,6 +16,6 @@ int main(void)
 		}
 		j++;
 	}
-	printf ("%d\n", k);
-	return(0);
+	printf("%d\n", k);
+	return (0);
 }
