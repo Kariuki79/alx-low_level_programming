@@ -7,7 +7,7 @@
  */
 void print_times_table_rmow(int n, int row)
 {
-    int a, b, c;
+    int b, c;
 
     for (b = 0; b <= n; b++)
     {
