@@ -8,30 +8,40 @@
 
 int main(void)
 {
-        unsigned long int a, b, c, b1, b2, c1, c2;
+	int count;
+        unsigned long int man5 = 0, man6 =2, sum;
+	unsigned long man1_plan1, man1_plan2, man1_plan2;
+	unsigned long plan1, plan2;
 
-        b = 1;
-        c = 2;
-        printf("%lu", b);
-        for (a = 1; a < 91; a++)
-        {
-                printf(", %lu", c);
-                c = c + b;
-                b = c - b;
-        }
-        b1 = b / 1000000000;
-        b2 = b % 1000000000;
-        c1 = c / 1000000000;
-        c2 = c % 1000000000;
-        for (a = 92; a < 99; ++a)
-        {
-                printf(", %lu%lu", c1 + (c2 / 1000000000), c2 % 1000000000);
-                c1 = c1 + b1;
-                b1 = c1 - b1;
-                c2 = c2 + b2;
-                b2 = c2 - b2;
-        }
-        printf("\n");
-        return (0);
+	 for(count = 0; count < 92; count++)
+	 {
+		 sum = man1 + man2
+			 printf("%lu", sum);
+		 man1 = man2
+			 man2 = sum;
+	 }
+	 man1_plan = man1 / 1000000000;
+	 man2_plan1 = man2 / 1000000000;
+	 man1_plan2 = man1 % 1000000000;
+	 man2_plan2 = man2 % 1000000000;
+	 for (count =93; count < 99; count++)
+	 {
+		 plan1 = man1_plan1 + man2_plan1;
+		 plan2 = man1_plan2 + man2_plan2;
+		 if (man1_plan2 +man1_plan2> 9999999999)
+		 {
+			 plan1 += 1;
+			 plan2 %= 10000000000;;
+		 }
+		 printf("%lu%lu", plan1, plan2);
+		 if (coudnt != 98)
+			 printf(",");
+		 man1_plan1 = man2_plan1;
+		 man1_plan2 = man2_plan2;
+		 man2_plan1 = plan1;
+		 man2_plan2 = plan2;
+	 }
+	 printf("\n");
+	 return (0);
 }
-                                                                                                                                    1,1           Top
+
