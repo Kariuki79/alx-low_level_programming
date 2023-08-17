@@ -18,7 +18,6 @@ int main(void)
 	unsigned long int to3;
 	
 	printf("%lu", from);
-	
 	for (m = 1; m < 91; m++)
 	{
 		printf(", %lu", to);
