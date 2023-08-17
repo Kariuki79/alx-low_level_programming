@@ -7,41 +7,37 @@
 */
 
 int main(void)
-{
-	int count;
-        unsigned long int man1 = 0, man2 =1, sum;
-	unsigned long man1_plan1, man1_plan2, man2_plan1, man2_plan1, man2_plan2;
-	unsigned long plan1, plan2;
-
-	 for(count = 0; count < 92; count++)
-	 {
-		 sum = man1 + man2
-			 printf("%lu", sum);
-		 man1 = man2
-			 man2 = sum;
-	 }
-	 man1_plan = man1 / 1000000000;
-	 man2_plan1 = man2 / 1000000000;
-	 man1_plan2 = man1 % 1000000000;
-	 man2_plan2 = man2 % 1000000000;
-	 for (count =93; count < 99; count++)
-	 {
-		 plan1 = man1_plan1 + man2_plan1;
-		 plan2 = man1_plan2 + man2_plan2;
-		 if (man1_plan2 +man1_plan2> 9999999999)
-		 {
-			 plan1 += 1;
-			 plan2 %= 10000000000;;
-		 }
-		 printf("%lu%lu", plan1, plan2);
-		 if (coudnt != 98)
-			 printf(",");
-		 man1_plan1 = man2_plan1;
-		 man1_plan2 = man2_plan2;
-		 man2_plan1 = plan1;
-		 man2_plan2 = plan2;
-	 }
-	 printf("\n");
-	 return (0);
+{unsigned long int m;
+	unsigned long int from = 1;
+	unsigned long int to = 2;
+	unsigned long int m = 1000000000;
+	unsigned long int from2;
+	unsigned long int from3;
+	unsigned long int to2;
+	unsigned long int to3;
+	
+	printf("%lu", from);
+	for (m = 1; m < 91; m++)
+	{
+		printf(", %lu", to);
+		aft += from;
+		bef = to - from;
+	}
+	
+	from2 = (from / l);
+	from3 = (from % l);
+	to2 = (to / l);
+	to3 = (to % l);
+	for (m = 92; m < 99; ++m)
+	{
+		printf(", %lu", to2 + (to3 / l));
+		printf("%lu", to3 % l);
+		to2 = to2 + from2;
+		from2 = to2 - from2;
+		to3 = to3 + from3;
+		from3 = to3 - from3;
+	}
+	printf("\n");
+	return (0);
 }
 
