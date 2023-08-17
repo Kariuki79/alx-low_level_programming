@@ -20,8 +20,8 @@ int main(void)
 	for (m = 1; m < 91; m++)
 	{
 		printf(", %lu", to);
-		aft += from;
-		bef = to - from;
+		to += from;
+		from = to - from;
 	}
 	
 	from2 = (from / v);
