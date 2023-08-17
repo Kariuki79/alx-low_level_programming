@@ -9,8 +9,8 @@
 int main(void)
 {
 	int count;
-        unsigned long int man5 = 0, man6 =2, sum;
-	unsigned long man1_plan1, man1_plan2, man1_plan2;
+        unsigned long int man1 = 0, man2 =1, sum;
+	unsigned long man1_plan1, man1_plan2, man2_plan1, man2_plan1, man2_plan2;
 	unsigned long plan1, plan2;
 
 	 for(count = 0; count < 92; count++)
