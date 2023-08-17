@@ -1,13 +1,14 @@
 #include <stdio.h>
 /**
  * main - largest prime facter of 612852475143
- * Return: 0
+ *Return: 0
 */
 int main(void)
 {
-	long int x, i, prime_factor
+	long int x, i, prime_factor;
 
 	prime_factor = -1;
+
 	x = 612852475143;
 
 	while (x % 2 == 0)
@@ -25,7 +26,6 @@ int main(void)
 	}
 	if (x > 2)
 		prime_factor = x;
-
-	printf("%ld\n", prime_fzctor);
+	printf("%ld\n", prime_factor);
 	return (0);
 }
