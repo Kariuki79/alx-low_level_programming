@@ -7,7 +7,8 @@
 */
 
 int main(void)
-{unsigned long int m;
+{
+	unsigned long int m;
 	unsigned long int from = 1;
 	unsigned long int to = 2;
 	unsigned long int v = 1000000000;
@@ -15,7 +16,9 @@ int main(void)
 	unsigned long int from3;
 	unsigned long int to2;
 	unsigned long int to3;
+	
 	printf("%lu", from);
+	
 	for (m = 1; m < 91; m++)
 	{
 		printf(", %lu", to);
