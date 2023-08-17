@@ -2,6 +2,7 @@
 /**
  * print_most_numbers - print numbers from 0 to 9 apart from 2 and 4
  * @i: stores the numbers;
+ * Return: void
 */
 
 void print_most_numbers(void)
