@@ -3,8 +3,8 @@
 /**
 * main - finds and prints the first 98 Fibonacci numbers
 * starting with 1 and 2
-* Return: 0 
-*/
+* Return: 0
+* */
 
 int main(void)
 {unsigned long int m;
@@ -23,7 +23,6 @@ int main(void)
 		to += from;
 		from = to - from;
 	}
-	
 	from2 = (from / v);
 	from3 = (from % v);
 	to2 = (to / v);
