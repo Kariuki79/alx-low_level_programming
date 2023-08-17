@@ -10,7 +10,7 @@ int main(void)
 {unsigned long int m;
 	unsigned long int from = 1;
 	unsigned long int to = 2;
-	unsigned long int m = 1000000000;
+	unsigned long int v = 1000000000;
 	unsigned long int from2;
 	unsigned long int from3;
 	unsigned long int to2;
@@ -24,14 +24,14 @@ int main(void)
 		bef = to - from;
 	}
 	
-	from2 = (from / l);
-	from3 = (from % l);
-	to2 = (to / l);
-	to3 = (to % l);
+	from2 = (from / v);
+	from3 = (from % v);
+	to2 = (to / v);
+	to3 = (to % v);
 	for (m = 92; m < 99; ++m)
 	{
-		printf(", %lu", to2 + (to3 / l));
-		printf("%lu", to3 % l);
+		printf(", %lu", to2 + (to3 / v));
+		printf("%lu", to3 % v);
 		to2 = to2 + from2;
 		from2 = to2 - from2;
 		to3 = to3 + from3;
