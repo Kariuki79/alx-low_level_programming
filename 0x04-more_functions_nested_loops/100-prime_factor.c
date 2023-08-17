@@ -7,7 +7,7 @@ int main(void)
 {
 	long int x, i, prime_factor
 
-	prime_factor= -1;
+	prime_factor = -1;
 	x = 612852475143;
 
 	while (x % 2 == 0)
