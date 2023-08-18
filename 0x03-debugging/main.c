@@ -2,7 +2,6 @@
 
 /**
 * main - tests function that prints if integer is positive or negative
-* @i: integer to be passed to positive_or_negative(i)
 * Return: 0
 */
 
