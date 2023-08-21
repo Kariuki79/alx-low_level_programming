@@ -1,18 +1,12 @@
-#include "main.h"
-/** put2 -prints every other charater of a string
- * @str: stores character to be printed
- */
-void puts2(char *str);
+void puts2(char *s)
 {
-	int m;
+	int a;
 
-	for (m = 0; s[m] != '\0'; m++
-			{
-			if (m %2 == 0;
-					{
-					putchar(s[m]);
-					}
-					}
-					_putchar('\n');
-					}
-
+	for (a = 0; s[a] != '\0'; a++)
+	{
+		if (a % 2 == 0)
+		{
+			_putchar(s[a]);
+		}
+	}
+}
