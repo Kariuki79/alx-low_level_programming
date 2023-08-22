@@ -9,24 +9,34 @@
 
 int _atoi(char *s)
 {
-	int a = 0, j = 0, m = 0, length = 0, p = 0, numb = 0;
+	int u, v, w, length, x, numb;
 
-	while (s[length])
+	u = 0;
+	v = 0;
+	w = 0;
+	length = 0;
+	x = 0;
+	numb = 0;
+	while (s[length] != '\0')
 		length++;
-	while (a < length && p == 0)
-	{
-		if (s[a] == '-')
-			++j;
-		if (s[a] >= '0' && s[a] <= '9')
-		{
-			numb = s[a] - '0';
-			m = m * 10 + (j % 2 ? -numb : numb);
-			p = 1;
-			if (s[a + 1] < '0' || s[a + 1] > '9')
-				break;
-		}
-		a++;
-	}
-	return (p ? m : 0);
+			while (u < length && x == 0)
+			{
+				if (s[u] == '-')
+					++v;
+				if (s[u] >= '0' && s[u] <= '9')
+				{
+					numb = s[u] - '0';
+					if (v % 2)
+						numb = -numb;
+					w = w * 10 + numb;
+					x = 1;
+					if (s[u + 1] < '0' || s[u + 1] > '9')
+						break;
+					x = 0;
+				}
+				u++;
+			}
+	if (x == 0)
+		return (0);
+	return (w);
 }
-
