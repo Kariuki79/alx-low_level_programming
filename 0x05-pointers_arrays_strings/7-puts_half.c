@@ -3,22 +3,23 @@
  * puts_half - prints the second half of the string
  * @str: stoes the string
 */
+
 void puts_half(char *str)
 {
-	int length = 0;
-	int i;
-
-	for (i = 0; str[i] != '\0'; i++)
-	while(str[length] != '\0')
+	int a, b, length;
+	length = 0;
+	for (a = 0; str[a] != '\0'; a++)
 	{
-		length++;
-		str++;
+		len++;
 	}
-	str = str - (length / 2);
-	while (
-	for (i = 0; str[i] != '\0'; i++)
+	b = (length / 2);
+	if ((length % 2) == 1)
 	{
-		_putchar(str[i]);
+		b = ((len + 1) / 2);
 	}
-	_putchar('\n');
+	for (a = b; str[a] != '\0'; a++)
+	{
+		_putchar(str[a]);
+		_putchar('\n');
+	}
 }

@@ -9,7 +9,7 @@
 
 int _atoi(char *s)
 {
-	int i, j, m, length, p, numb;
+	int a, j, m, length, p, numb;
 
 	a = 0;
 	j = 0;
@@ -21,7 +21,7 @@ int _atoi(char *s)
 	while (s[len] != '\0')
 		len++;
 
-	while (a < len && p == 0)
+	while (a < length && p == 0)
 	{
 		if (s[a] == '-')
 			++j;
