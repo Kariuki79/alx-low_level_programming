@@ -22,6 +22,9 @@ int _atoi(char *s)
 	{
 		length++;
 	}
+	for (j = 0; j < a; j++)
+	{
+		if((s[
 	while (a < length && p == 0)
 	{
 		if (s[a] == '-')
@@ -50,4 +53,43 @@ int _atoi(char *s)
 		return (0);
 	}
 	return (m);
+}
+
+
+
+
+
+
+int _atoi(char *s)
+{
+	int a, b, ten2, neg, found;
+	unsigned int ten;
+
+	int a = 0;
+	unsigned int n = 0;
+	int b = 1;
+	int c = 0;
+
+	while (s[a] != '\0')
+	{
+		a++;
+	}
+	for (b = 0; b < a; b++)
+	{
+		if ((s[b] >= 48) && (s[b] <= 57))
+		{
+			ten = ten * 10 + (s[b] - '0');
+			found = 1;
+		}
+		else if (s[b] == 45)
+		{
+			neg = neg * -1;
+		}
+		else if (found == 1)
+		{
+			break;
+		}
+	}
+	ten2 = ten * neg;
+	return (ten2);
 }
