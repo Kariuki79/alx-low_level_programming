@@ -1,18 +1,30 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * main - check the code for
- *
- * Return: Always 0.
+ * leet - checks a function that encodes a string
+ * @str: string to be encoded
+ * Return: str
  */
-int main(void)
+char *leet(char *str)
 {
-    char s[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";
-    char *p;
+	char leetLetters[] = "aAeEoOtTlL";
+	char leetNums[] = "4433007711";
+	int i = 0;
 
-    p = leet(s);
-    printf("%s", p);
-    printf("%s", s);
-    return (0);
+	while (str[i] != '\0')
+	{
+		char *pos = leetLetters;
+		char *num = leetNums;
+		while (*pos)
+		{
+			if (*pos == str[i])
+			{
+				str[i] = *num;
+				break;
+			}
+			pos++;
+			num++;
+		}
+		i++;
+	}
+	return str;
 }
