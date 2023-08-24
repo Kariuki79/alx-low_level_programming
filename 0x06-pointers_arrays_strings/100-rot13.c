@@ -7,9 +7,9 @@
 char *rot13(char *str)
 {
 	char alphabet[] =
-		"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char rot13_alphabet[] =
-		"nopqrstuvwxyzabcdefghi""jklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+"nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	int i = 0;
 
