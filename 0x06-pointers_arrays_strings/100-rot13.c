@@ -6,8 +6,10 @@
  */
 char *rot13(char *str)
 {
-	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char rot13_alphabet[] = "nopqrstuvwxyzabcdefghi""jklmNOPQRSTUVWXYZABCDEFGHIJKLM";
+	char alphabet[] =
+		"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char rot13_alphabet[] =
+		"nopqrstuvwxyzabcdefghi""jklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 	int i = 0;
 
