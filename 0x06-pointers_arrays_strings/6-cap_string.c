@@ -1,7 +1,6 @@
 #include "main.h"
 /**
  * separator - checks whether a character is a seperator
- * *cap_string - capitalizes all words of a string
  * @ch: string to be capitalized
  * Return: i if ch is a character or 0 if not
  */
@@ -27,6 +26,12 @@ int separator(char ch)
 			return (0);
 	}
 }
+
+/**
+ * cap_string - capitalizes all words of a string
+ * @str: string to be capitalized
+ * Return: str
+ */
 
 char *cap_string(char *str)
 {
