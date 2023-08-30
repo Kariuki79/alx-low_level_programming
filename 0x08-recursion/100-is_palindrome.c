@@ -20,7 +20,7 @@ int check_pal(char *s, int start, int end)
 	{
 		return (0); /* Characters don't match, not a palindrome */
 	}
-	return check_pal(s, start + 1, end - 1); /* Recursively check inner characters */
+	return (check_pal(s, start + 1, end - 1)); /* Recursively check characters */
 }
 /**
  * _strlen_recursion - returns the length of a string
@@ -32,9 +32,9 @@ int _strlen_recursion(char *s)
 {
 	if (*s == '\0')
 	{
-		return 0;
+		return (0);
 	}
-	return 1 + _strlen_recursion(s + 1);
+	return (1 + _strlen_recursion(s + 1));
 }
 
 /**
@@ -47,6 +47,7 @@ int _strlen_recursion(char *s)
 int is_palindrome(char *s)
 {
 	int len = _strlen_recursion(s); /* Calculate the length of the string */
-	return check_pal(s, 0, len - 1); /* Call the helper function with initial bounds */
+
+	return (check_pal(s, 0, len - 1));
 }
 
