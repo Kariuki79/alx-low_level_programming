@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  * main - prints all arguments it receives
- * @argc- count of arguments
- * @argv - pointer to array of arguments
+ * @argc: count of arguments
+ * @argv: pointer to array of arguments
  * Return: 0
  */
 int main(int argc, char *argv[])
