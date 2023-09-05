@@ -5,7 +5,7 @@
  * main - adds positive numbers
  * @argc: number of arguments passed
  * @argv: array of strings
- * Return: 0
+ * Return: 0 no number is passed 1 if error
  */
 int main(int argc, char *argv[])
 {
