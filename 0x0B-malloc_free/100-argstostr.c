@@ -41,9 +41,14 @@ char *argstostr(int ac, char **av)
 			r++;
 		}
 
+		pull[t] = '\n';
+
+		r = 0;
 		t++;
+		q++;
 	}
 
-	pull[t] = '\0';
-	return (pull);
+		t++;
+		pull[t] = '\0';
+		return (pull);
 }
