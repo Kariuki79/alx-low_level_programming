@@ -1,11 +1,11 @@
 #ifndef DOG_H
 #define DOG_H
 
-/*
- * struct dog - Represents the basic information of the dog
+/**
+ * struct dog - a dog's basic information
  * @name: name of the dog
  * @age: age of the dog
- * @owner: owner of the dog
+ * @owner: iiowner of the dog
  */
 struct dog
 
