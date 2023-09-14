@@ -7,12 +7,14 @@
  * number of additional parameters
  * @...: variable number of arguments
  *
- * Return: if n == 0
+ * Return: 0 if n is null or sum
  * else - sum of all parameters
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	unsigned int i, sum = 0;
+	unsigned int i;
+
+	int sum = 0;
 
 	va_list args;
 
@@ -25,9 +27,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	for (i = 0; i < n; i++)
 	{
-		int num = va_arg(args, int);
-
-		sum += num;
+		sum += va_arg(args, int);
 	}
 
 	va_end(args);
