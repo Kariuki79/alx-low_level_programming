@@ -1,4 +1,5 @@
 #include <stdarg.h>
+#include "variadic_functions.h"
 /**
  * sum_them_all - takes a variable number of
  * integer parameters and returns the sum of those parameters
