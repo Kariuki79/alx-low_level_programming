@@ -3,17 +3,16 @@
 
 void print_all(const char * const format, ...)
 {
+     va_list args;
+    va_start(args, format);
+     const char *separator = "";
+    char format_specifier;
+
     if (format == NULL)
     {
         printf("\n");
         return;
     }
-
-    va_list args;
-    va_start(args, format);
-
-    const char *separator = "";
-    char format_specifier;
     
     for (int i = 0; format[i]; i++)
     {
