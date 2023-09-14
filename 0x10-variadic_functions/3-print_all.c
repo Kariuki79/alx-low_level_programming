@@ -6,16 +6,15 @@
  */
 void print_all(const char * const format, ...)
 {
-	va_list args;
-
-	va_start(args, format);
-
-	char *separator = "";
-
+	const char *separator = "";
 	char format_specifier;
+	unsigned int i = 0;
+	va_list args;
+	va_start(args, format);
 
 	if (format == NULL)
 	{
+		
 		printf("\n");
 	}
 	for (i = 0; format[i]; i++)
