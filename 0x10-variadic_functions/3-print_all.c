@@ -12,16 +12,16 @@ void print_all(const char * const format, ...)
 	const char d_arg[] = "cifs";
 
 	va_start(valist, format);
-	while (format && format[])
+	while (format && format[a])
 	{
-		j = 0;
+		b = 0;
 		while (d_arg[b])
 		{
 			if (format[a] == d_arg[b] && c)
 			{
 				printf(", ");
 				break;
-			} j++;
+			} b++;
 		}
 		switch (format[a])
 		{
