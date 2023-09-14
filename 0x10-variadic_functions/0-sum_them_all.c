@@ -5,9 +5,7 @@
  * @n: the first paramter of the function and it represents
  * number of additional parameters
  * @...: variable number of arguments
- *
  * Return: 0 if n is null or sum
- * else - sum of all parameters
  */
 int sum_them_all(const unsigned int n, ...)
 {
