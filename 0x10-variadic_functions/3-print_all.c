@@ -14,7 +14,7 @@ void print_all(const char * const format, ...)
 
 	if (format == NULL)
 	{
-		
+		return;
 		printf("\n");
 	}
 	for (i = 0; format[i]; i++)
