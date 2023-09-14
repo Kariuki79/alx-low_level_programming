@@ -14,7 +14,7 @@ void print_all(const char * const format, ...)
         return;
     }
     
-    for (int i = 0; format[i]; i++)
+    for (i = 0; format[i]; i++)
     {
         format_specifier = format[i];
         
