@@ -27,7 +27,7 @@ void print_opcodes(char *f, int d)
  * @argv: argument vector
  * Return: 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
 	int d;
 
