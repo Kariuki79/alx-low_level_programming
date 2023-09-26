@@ -1,5 +1,5 @@
 #include <stddef.h>
-include "lists.h"
+#include "lists.h"
 /**
  * sum_listint - returns the sum of all the data of a listint_t linked list.
  * @head: pointer to the head of the list
