@@ -39,8 +39,8 @@ size_t looped_listint_len(const listint_t *head)
 			return (nodes);
 		}
 
-		elements_freed(elements_freed)->next;
-				current_mode = current_mode->next;
+		elements_freed = (elements_freed)->next;
+		current_mode = current_mode->next;
 				return (0);
 		}
 
@@ -50,11 +50,10 @@ size_t looped_listint_len(const listint_t *head)
  *
  * Return: The number of nodes in the list.
  */
-		size_t print_listint_safe(const listint_t *head)
-		{
-		size_t nodes, index = 0;
-
-		nodes = looped_listint_len(head);
+size_t print_listint_safe(const listint_t *head)
+{
+	size_t nodes, index = 0;
+	nodes = looped_listint_len(head);
 
 		if (nodes == 0)
 		{
