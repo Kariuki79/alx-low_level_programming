@@ -27,7 +27,7 @@ listint_t **_ra(listint_t **list, size_t size, listint_t *new)
 }
 /**
  * free_listint_safe - safely frees a linked list and counts the elements
- * @h: a pointer
+ * @head:  pointer
  * Return: the size of the list
  */
 size_t free_listint_safe(listint_t **head)
