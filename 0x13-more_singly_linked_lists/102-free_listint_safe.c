@@ -15,26 +15,26 @@ size_t free_listint_safe(listint_t **head_ptr)
 	if (!head_ptr || !*head_ptr)
 		return (0);
 
-	while (*h)
+	while (*head_ptr)
 	{
-		address_diff = *h - (*h)->next;
+		address_diff = *head_ptr - (*head_ptr)->next;
 		if (address_diff > 0)
 		{
-			current_mode = (*h)->next;
-			free(*h);
-			*h = current_mode;
+			current_node = (*head_ptr)->next;
+			free(*head_ptr);
+			*head_ptr = current_node;
 			elements_freed++;
 		}
 		else
 		{
-			free(*h);
-			*h = NULL;
+			free(*head_ptr);
+			*head_ptr = NULL;
 			elements_freed++;
 			break;
 		}
 	}
 
-	*h = NULL;
+	*head_ptr = NULL;
 
 	return (elements_freed);
 }
