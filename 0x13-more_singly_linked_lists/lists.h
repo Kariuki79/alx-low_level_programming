@@ -3,6 +3,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stddef.h>
+#define SUCCESS 1
+#define FAILURE -1
 
 /**
  * struct listint_s - singly linked list
