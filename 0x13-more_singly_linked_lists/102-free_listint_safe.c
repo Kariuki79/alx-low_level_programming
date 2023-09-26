@@ -2,61 +2,42 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * _ra - reallocates memory for an array of pointers
- * to the nodes in a linked list
- * @list: the old list
- * @size: size of the new list
- * @new: new node to add to the list
- * Return: pointer to the new list
+ * free_listint_safe - safely frees a linked list and counts the elements
+ * @h: a pointer
+ * Return: the size of the list
  */
-listint_t **_ra(listint_t **list, size_t size, listint_t *new)
+size_t free_listint_safe(listint_t **h)
 {
-	listint_t **newl;
-	size_t i;
+	size_t counter = 0;
+	listint_t *temp;
 
-	newl = malloc(size * sizeof(listint_t *));
-	if (newl == NULL)
+	temp = *h;
+	while (temp)
 	{
-		free(list);
-		exit(98);
+		temp = *h;
+		temp = temp->next;
+		free_list(temp);
+		counter++;
 	}
-	for (i = 0; i < size - 1; i++)
-		newl[i] = list[i];
-	newl[i] = new;
-	free(list);
-	return (newl);
+	*h = NULL;
+
+	return (counter);
 }
 /**
- * free_listint_safe - safely frees a linked list and counts the elements
- * @head: a pointer to a pointer to the head of the linked list.
- *
- * Return: the number of elements that were freed.
+ * free_list - frees a listint_t recursively
+ * @head: A pointer to the listint_t structure
+ * Return: Nothing
  */
-size_t free_listint_safe(listint_t **head)
+void free_list(listint_t *head)
 {
-	size_t a, num = 0;
-	listint_t **list = NULL;
-	listint_t *next;
+	listint_t *t;
 
-	if (head == NULL || *head == NULL)
-		return (num);
-	while (*head != NULL)
+	if (head)
 	{
-		for (a = 0; a < num; a++)
-		{
-			if (*head == list[a])
-			{
-				*head = NULL;
-				free(list);
-				return (num);
-			}
-		}
-		num++;
-		list = _ra(list, num, *head);
-		next = (*head)->next;
-		free(*head);
-		*head = next;
+		t = head;
+		t = t->next;
+		free(t);
+		free_list(t);
 	}
-	free(list);
-	return (num);
+	free(head);
 }
