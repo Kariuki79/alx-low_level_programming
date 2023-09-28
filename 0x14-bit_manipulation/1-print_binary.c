@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <unistd.h>
-/*
+/**
  * print_binary - prints the binary representation of a number
  * @n: number to find the binary representation of
  */
