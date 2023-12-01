@@ -9,7 +9,7 @@
 hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *ht;
-	unsigned long int intgral;
+	unsigned long int m;
 
 	ht = malloc(sizeof(hash_table_t));
 	if (ht == NULL)
@@ -19,7 +19,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	ht->array = malloc(sizeof(hash_node_t *) * size);
 	if (ht->array == NULL)
 		return (NULL);
-	for (integral = 0; intgral < size; intgral++)
+	for (m = 0; m < size; m++)
 		ht->array[integral] = NULL;
 
 	return (ht);
