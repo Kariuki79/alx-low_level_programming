@@ -1,7 +1,5 @@
 #!/bin/bash
-#include <stdio.h>
-int main()
 {
-	printf("%s\n", "Programming is like building a multilingual puzzle");
+	printf("%s\n", "with proper grammar, but the outcome is a piece of art");
 	return 0;
 }
