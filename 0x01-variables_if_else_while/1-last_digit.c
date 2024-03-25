@@ -6,17 +6,18 @@
  *
  * A program that assigns a random number to the variable
  *
- * Returns: 0 (successful execution)
+ * Return: 0 (successful execution)
  *
  */
 int main(void)
 {
 	int n;
 	int last_digit;
-
+	
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	last_digit = abs(n % 10); /* modulus extracts the last digit an integer */
+
+	last_digit = (n % 10); /* modulus extracts the last digit an integer */
 
 	printf("last digit of %d is %d ", n, last_digit);
 
