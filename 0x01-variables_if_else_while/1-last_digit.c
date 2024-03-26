@@ -2,18 +2,17 @@
 #include <time.h>
 #include <stdio.h>
 /*
- * main - Entry point of the program
+ * main - entry point of the program
  *
- * A program that assigns a random number to the variable
+ * A program that will assign a random number to the variable
  *
- * Return: 0 (successful execution)
- *
+ * Returns: 0 (successful execution)
  */
 int main(void)
 {
 	int n;
 	int last_digit;
-	
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
