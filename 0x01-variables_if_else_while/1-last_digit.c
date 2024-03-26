@@ -2,13 +2,13 @@
 #include <time.h>
 #include <stdio.h>
 
-/*
+/**
  * main - Entry point of the program
  *
  * Description:
  * This program generates a random number and determines
  * properties of its last digit.
- * Returns:0 - Successful execution
+ * Return:0 - Successful execution
  */
 int main(void)
 {
@@ -32,7 +32,8 @@ int main(void)
 	}
 	else
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last_digit);
+		printf("Last digit of %d is %d ", n, last_digit);
+		printf("and is less than 6 and not 0\n");
 	}
 
 	return (0);
