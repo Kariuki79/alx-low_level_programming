@@ -15,7 +15,7 @@ int main(void)
 
 	for (i = 0; i < base; i++)
 	{
-		printf("%d\n", i);
+		printf("%d", i);
 	}
 
 	return (0);
