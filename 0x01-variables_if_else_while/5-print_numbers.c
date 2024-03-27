@@ -17,6 +17,7 @@ int main(void)
 	{
 		printf("%d", i);
 	}
+	printf("\n"); /* Add a new line at the end */
 
 	return (0);
 }
