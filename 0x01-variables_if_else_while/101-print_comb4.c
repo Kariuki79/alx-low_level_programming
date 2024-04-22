@@ -10,20 +10,34 @@
  */
 int main(void)
 {
-	for (int a = 1; a <= 7; a++)
+	int a, b, c;
+
+	for (a = 0; a <= 9; a++)
 	{
-		for (int b = (a + 1); b <= 8; b++)
+		for (b = (a + 1); b <= 9; b++)
 		{
-			for (int c = (b + 1); c <= 9; c++)
+			for (c = (b + 1); c <= 9; c++)
 			{
-				putchar(a + '0');
-				putchar(b + '0');
-				putchar(c + '0');
-				putchar(',');
-				putchar(' ');
+				if (a != b && b != c && a != c)
+				{
+					putchar(a + '0');
+					putchar(b + '0');
+					putchar(c + '0');
+
+					if (a != 7 || b != 8 || c != 9)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+
+					if (a == 7 && b == 8 && c == 9)
+					{
+						putchar('\n');
+					}
+				}
 			}
 		}
 	}
-	putchar('\0');
+
 	return (0);
 }
