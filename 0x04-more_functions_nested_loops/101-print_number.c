@@ -7,6 +7,7 @@
  */
 void print_number(int n)
 {
+	unsigned int a;
 	/*
 	 * if the number is negative, print the '-' sign and convert n
 	 * to positive
@@ -15,15 +16,25 @@ void print_number(int n)
 	if (n < 0)
 	{
 		_putchar('-');
-		n = -n;
+		a = -n;
 	}
-
-	/* Recursively print the digits of the number */
-
-	if (n / 10)
+	else
 	{
-		print_number(n / 10);
+		a = n;
+	}
+	if (a == 0)
+	{
+		_putchar('0');
+	}
+	else
+	{
+		/* Recursively print the digits of the number */
+
+		if (a / 10 != 0)
+	{
+		print_number(a / 10);
 	}
 
-	_putchar((n % 10) + '0');
+	_putchar((a % 10) + '0');
+	}
 }
