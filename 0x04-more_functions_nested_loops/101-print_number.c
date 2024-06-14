@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include "main.h"
 
-int _putchar(char c);
-
 /**
  * print_number - Prints an integer using_putchar
  * @n: The integer to print.
