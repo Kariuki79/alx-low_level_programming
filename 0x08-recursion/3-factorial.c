@@ -5,7 +5,7 @@
  *
  * @n: The number to calclate the factorial of
  *
- * return: The factorial of n, or -1 to indicate an error
+ * Return: The factorial of n, or -1 to indicate an error
  */
 int factorial(int n)
 {
