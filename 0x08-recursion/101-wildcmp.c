@@ -12,17 +12,24 @@
 int wildcmp(char *s1, char *s2)
 {
 	if (*s1 == '\0' && *s2 == '\0') /* Both string end */
+	{
 		return (1);
+	}
 	if (*s2 == '*') /*  Handle wildcard */
 	{
 		if (*(s2 + 1) == '\0') /** If * is the last character,
 					*  it matches  anything
 					*/
+			{
+				return (1);
+			}
 
-			if (*s2 != '\0' && wildcmp(s1 + 1, s2)) /** Match * with
+			if (*s1 != '\0' && wildcmp(s1 + 1, s2)) /** Match * with
 								  * current char
 								  */
+			{
 				return (1);
+			}
 		return (wildcmp(s1, s2 + 1)); /* Skip the * */
 	}
 	if (*s1 == *s2) /* If the characters match */
