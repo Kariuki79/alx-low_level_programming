@@ -1,13 +1,12 @@
+#include "main.h"
 #include <stdio.h>
-
 /**
- * main - Prints the number of arguments passed into it.
- * @argc: Argument count
- * @argv: Argument vector (unused)
+ * main - prints the number of arguments passe
+ * @argc: number of CL arguments
+ * @argv: array of CL arguments
  *
- * Return: Always 0 Success
+ * Return: 0
  */
-
 int main(int argc, char *argv[] __attribute__((unused)))
 {
 	printf("%d\n", argc - 1);
