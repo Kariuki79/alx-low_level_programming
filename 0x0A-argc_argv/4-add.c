@@ -41,12 +41,12 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	for (i = 0; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
 		if (!is_number(argv[i])) /* Validate if it's a number */
 		{
 			printf("Error\n");
-			return (1);
+			return (i);
 		}
 
 		sum += atoi(argv[i]); /* Convert to int and add to sum */
