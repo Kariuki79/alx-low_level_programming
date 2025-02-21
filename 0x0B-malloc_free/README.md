@@ -47,4 +47,15 @@ int **alloc_grid(int width, int height);
 
 
 
+## **4. free_grid Function**
+### **Description**
+The `free_grid` function releases the memory allocated for a 2D array of integers.
+
+### **Prototype**
+```c
+void free_grid(int **grid, int height);
+
+
+
+
 
