@@ -33,3 +33,18 @@ char *_strdup(char *str);
 
 
 
+
+# 0x0B-malloc_free
+
+## **3. alloc_grid Function**
+### **Description**
+The `alloc_grid` function dynamically allocates memory for a 2D array of integers and initializes all elements to `0`.
+
+### **Prototype**
+```c
+int **alloc_grid(int width, int height);
+
+
+
+
+
