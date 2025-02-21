@@ -58,4 +58,11 @@ void free_grid(int **grid, int height);
 
 
 
+## **100. argstostr Function**
+### **Description**
+The `argstostr` function concatenates all arguments of the program into a single string, separating each argument with a newline (`\n`).
+
+### **Prototype**
+```c
+char *argstostr(int ac, char **av);
 
