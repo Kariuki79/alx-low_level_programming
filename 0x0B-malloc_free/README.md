@@ -18,4 +18,18 @@ Otherwise, it initializes the array with the character c and returns a pointer t
 
 
 
+# 0x0B-malloc_free
+
+## **Project Overview**
+This project focuses on dynamic memory allocation using `malloc` and `free` in C. It includes functions that allocate memory, copy strings, and manage memory efficiently.
+
+## **1. _strdup Function**
+### **Description**
+The `_strdup` function duplicates a given string into a newly allocated memory space.
+
+### **Prototype**
+```c
+char *_strdup(char *str);
+
+
 
