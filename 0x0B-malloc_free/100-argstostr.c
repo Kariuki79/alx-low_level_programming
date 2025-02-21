@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * argstostr - Concantenates all arguments of the pointer
- * @av: Argument vector
- * @ac: Argument count
+ * argstostr - Concatenates all arguments of the program.
+ * @ac: Argument count.
+ * @av: Argument vector.
  *
- * Return: Pointer to a new string containing all arguments, NULL if it fails.
+ * Return: Pointer to a new string containing all arguments, or NULL if fails.
  */
 char *argstostr(int ac, char **av)
 {
@@ -16,29 +16,31 @@ char *argstostr(int ac, char **av)
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-	/* Calculate the total length required */
+	/* Calculate total length required */
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j]; j++)
 			len++;
-		len++; /* for null terminator */
+		len++; /* For newline */
 	}
 
-		/* allocate memory */
-		str = malloc(sizeof(char) * len);
-		if (str == NULL)
-			return (NULL);
+	len++; /* For null terminator */
 
-		/* Copy arguments to the new string */
-		for (i = 0; i < ac; i++)
-		{
-			for (j = 0; av[i][j]; j++)
-				str[index++] = av[i][j];
+	/* Allocate memory */
+	str = malloc(sizeof(char) * len);
+	if (str == NULL)
+		return (NULL);
 
-			str[index++] = '\n'; /* add newline for each for argument */
-		}
+	/* Copy arguments into the new string */
+	for (i = 0; i < ac; i++)
+	{
+		for (j = 0; av[i][j]; j++)
+			str[index++] = av[i][j];
 
-		str[index] = '\0'; /* Null terminate */
+		str[index++] = '\n'; /* Add newline after each argument */
+	}
 
-		return (str);
+	str[index] = '\0'; /* Null terminate */
+
+	return (str);
 }
