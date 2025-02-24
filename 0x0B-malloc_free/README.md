@@ -66,3 +66,68 @@ The `argstostr` function concatenates all arguments of the program into a single
 ```c
 char *argstostr(int ac, char **av);
 
+
+
+
+
+
+
+String to Words (strtow)
+Description
+This program implements a function that splits a string into words. A word is defined as a sequence of characters separated by spaces. The function dynamically allocates memory for each word and returns an array of strings (words).
+
+Prototype
+c
+Copy
+Edit
+char **strtow(char *str);
+Parameters
+char *str: A pointer to the input string.
+Return Value
+Returns a pointer to an array of strings (words).
+Returns NULL if:
+The input string is NULL or empty.
+Memory allocation fails.
+There are no words in the string.
+Helper Functions
+int count_words(char *str);
+Counts the number of words in a string.
+
+char *allocate_word(char *str, int start, int end);
+Allocates memory and extracts a word from the string.
+
+Compilation & Usage
+Compiling the Code
+To compile the code, use the following command:
+
+bash
+Copy
+Edit
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 101-main.c 101-strtow.c -o strtow
+Running the Program
+To run the compiled executable:
+
+bash
+Copy
+Edit
+./strtow
+Example
+Input:
+
+c
+Copy
+Edit
+char *str = "Hello world";
+Output:
+
+css
+Copy
+Edit
+["Hello", "world"]
+Memory Management
+The function dynamically allocates memory using malloc.
+It ensures proper memory cleanup in case of allocation failure.
+Code Style
+The code follows the Betty coding style.
+It adheres to GNU89 standards.
+
